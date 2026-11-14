@@ -1,0 +1,51 @@
+department
+insert into department values
+(1,’CSE’),
+(2,’ECE’),
+(3,’EEE’);
+
+student
+Insert into student values
+(1,’ram’,20,1),
+(2,’anu’,21,1),
+(3,’priya’,20,2),
+(4,’arun’,22,3);
+professor
+Insert into professor values
+(201,’ravi’,1111111111,1),
+(202,’kumar’,2222222222,2),
+(203,’suresh’,3333333333,3);
+
+course
+Insert into course values
+(301,’DBMS’,1),
+(302,’Networks’,1),
+(303,’VLSI’,2),
+(304,’PowerSystems’,3);
+
+classroom
+Insert into classroom values
+(1,60),
+(2,50),
+(3,40);
+
+room
+Insert into room values
+(111,’office’,4),
+(112,’lab’,30),
+(113,’conference’,20);
+
+enroll
+Insert into enroll values
+(1,301),
+(1,302),
+(2,301),
+(3,303),
+(4,304);
+
+teaches
+Insert into teaches values
+(201,301),
+(201,302),
+(202,303),
+(203,304);
