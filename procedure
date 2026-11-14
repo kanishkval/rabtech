@@ -1,0 +1,12 @@
+CREATE PROCEDURE GetStudentsByDepartment
+    @DepartmentID INT
+AS
+BEGIN
+    SELECT
+        student_id,
+        student_name,
+        age
+    FROM student
+    WHERE department_id = @DepartmentID;
+END;
+GO
