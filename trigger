@@ -5,3 +5,13 @@ CREATE TABLE Audit_Log(
     action_date DATETIME DEFAULT GETDATE()
 );
 GO
+
+CREATE TRIGGER trg_Student_Insert
+ON student
+AFTER INSERT
+AS
+BEGIN
+    INSERT INTO Audit_Log(table_name,action_type)
+    VALUES('student','INSERT');
+END;
+GO
